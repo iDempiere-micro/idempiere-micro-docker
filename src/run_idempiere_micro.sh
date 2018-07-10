@@ -15,6 +15,6 @@ sudo docker run --rm --name idempiere-micro-karaf -d \
   naseukolycz/idempiere-micro:latest
 
 sleep 10
-sudo docker exec -it idempiere-micro-karaf /tmp/setup_idempiere_micro_karaf.sh
+sudo docker exec -i idempiere-micro-karaf /tmp/setup_idempiere_micro_karaf.sh
 sleep 10
-sudo docker exec -it idempiere-micro-karaf /opt/karaf/bin/client "system:shutdown -f -r"
+sudo docker exec -i idempiere-micro-karaf /opt/karaf/bin/client "system:shutdown -f -r"
