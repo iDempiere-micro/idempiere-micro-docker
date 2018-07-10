@@ -11,6 +11,7 @@ script:
   - docker exec -i idempiere-micro-karaf-test /tmp/setup_idempiere_micro_karaf.sh
   - sleep 10
   - docker exec -i idempiere-micro-karaf-test /opt/karaf/bin/client "system:shutdown -f -r"
+  - sleep 10
   - wget "http://localhost:8181/idempiere/api/status"
   - str="works!"
   - if [[ $(< status) != "$str" ]]; then
