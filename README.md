@@ -1,5 +1,7 @@
 # [Docker](https://www.docker.com/) image for [iDempiere Micro](https://idempiere-micro.github.io/web/) on [Karaf](http://karaf.apache.org/)
 
+[![Build Status](https://travis-ci.org/iDempiere-micro/idempiere-micro-docker.svg?branch=master)](https://travis-ci.org/iDempiere-micro/idempiere-micro-docker)
+
 ## Quick start
 
 Run on your own risk! Never run a script downloaded from the Internet without understanding it!
