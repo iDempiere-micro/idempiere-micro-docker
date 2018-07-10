@@ -15,6 +15,4 @@ script:
   - wget "http://localhost:8181/idempiere/api/status"
   - str="works!"
   - value=`cat status`
-  - if [[ "$value" != "$str" ]]; then
-  -   exit 1    
-  - fi
+  - if [[ "$value" != "$str" ]]; then exit 1; fi
