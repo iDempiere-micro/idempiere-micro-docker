@@ -26,6 +26,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends jq curl && rm -
 
 EXPOSE 1099 8101 44444
 
+VOLUME ["/opt/karaf/data"]
+
 USER $KARAF_USER
 
 CMD ["/opt/karaf/bin/karaf", "run"]
