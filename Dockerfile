@@ -3,11 +3,13 @@ FROM openjdk:8-slim
 ENV KARAF_USER karaf
 ENV KARAF_UID 8181
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
-ENV KARAF_VERSION 4.1.5
+ENV KARAF_VERSION 4.2.0
+ENV IDEMPIERE_MICRO_VERSION 0.0.1
 ENV JAVA_MAX_MEM 256m
 ENV KARAF_EXEC exec
 
 COPY download.sh /tmp/download.sh
+COPY idempiere_micro.sh /tmp/idempiere_micro.sh
 
 RUN groupadd -r $KARAF_USER --gid=$KARAF_UID && useradd -rm -g $KARAF_USER --uid=$KARAF_UID $KARAF_USER
 
