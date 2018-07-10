@@ -10,6 +10,7 @@ ENV KARAF_EXEC exec
 
 COPY download.sh /tmp/download.sh
 COPY idempiere_micro.sh /tmp/idempiere_micro.sh
+COPY setup_idempiere_micro_karaf.sh /tmp/setup_idempiere_micro_karaf.sh
 
 RUN groupadd -r $KARAF_USER --gid=$KARAF_UID && useradd -rm -g $KARAF_USER --uid=$KARAF_UID $KARAF_USER
 
